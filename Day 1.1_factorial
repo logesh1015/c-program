@@ -1,0 +1,21 @@
+//factorial of postivie number
+#include<stdio.h>
+
+int main()
+{
+	int i,number;
+	unsigned long long fact=1;
+	printf("enter the number :");
+	scanf("%d",&number);
+	
+	if(number<0)
+		printf("invalid");
+	else{
+     	for	(i=1;i<=number;i++) {
+     		fact=fact*i;
+		 }
+		 	printf("factorial is %d",fact);
+	}
+
+	return 0;
+}
