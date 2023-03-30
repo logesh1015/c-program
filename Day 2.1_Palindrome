@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char str[] = { "abbba" };
+
+	int x = 0;
+	int y = strlen(str) - 1;
+
+	while (y > x) {
+		if (str[x++] != str[y--]) {
+			printf("%s is not a palindrome\n", str);
+			return 0;
+		
+		}
+	}
+
+	printf("%s is a palindrome\n", str);
+
+	return 0;
+}
